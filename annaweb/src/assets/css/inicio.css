@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+:root {
+    --clr-icons: #929292;
+    --clr-text: #fff;
+    --clr-bg-dark: #202020;
+    --clr-bg-darkdark:#000000;
+    --clr-bg-gray:rgba(157,157,157,12%);
+    --clr-bg-light: #3b3b3b;
+    --clr-accent: #c254a6;
+}
+
+body {
+    margin: 0;
+    padding: 0;    
+}
+.principal{
+    display: flex;
+    color:var( --clr-text);
+    flex-direction: column;
+    flex-wrap: wrap;   
+    align-items: flex-start;
+    align-content:flex-start;
+    background-color: var( --clr-bg-dark);
+    height: 100vh;
+}
+
+
+.div-izq{
+    display: flex;
+    flex-direction: column;    
+    width: 50vw;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    height: 45vw;
+    background: var(--clr-bg-darkdark);
+}
+
+.imgana{       
+    width: 100%;
+    height: 75vh;
+    background: linear-gradient(rgb(1 1 1 / 62%),rgb(0 0 0 / 92%)), url(/img/anaa.052a3116.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 15rem  0 0 0;
+    margin:1rem
+}
+
+
+.social-icons-list {
+    list-style: none;
+    padding: 1rem;   
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.social-link {
+    font-size: 2rem;
+    color: #777;
+    transition: color .3s;
+    margin-left:1rem;
+}
+
+.social-link:hover {
+    color: #f0f0f0;
+}
+
+
+.div-der{  
+    display: flex;
+    flex-direction: column;  
+    width: 45vw;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    height: 45vw;
+    background: var(--clr-bg-darkdark);
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.black-block{
+    background-color: var(--clr-bg-gray) ;
+    margin: 5rem;
+    width: 80vh;
+    height: 80vh;
+    border-radius: 10rem 0 10rem 0;  
+}
+.nombre{
+    font-size: 4rem;
+}
+.profession{
+    font-size: 1.5rem;
+    margin-top:-4rem;
+}
+
+.img-viewmore{
+    display: flex;
+    flex-direction: row;
+}
+.img-illus{
+    width: 15vh;
+    border-radius: 2rem;
+}
