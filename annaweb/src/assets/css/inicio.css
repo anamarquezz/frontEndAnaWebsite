@@ -90,6 +90,7 @@ body {
     width: 80vh;
     height: 80vh;
     border-radius: 10rem 0 10rem 0;  
+    
 }
 .nombre{
     font-size: 4rem;
@@ -102,6 +103,12 @@ body {
 .img-viewmore{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+.img-izq{
+    width: 50vh;
 }
 .img-illus{
     width: 15vh;
