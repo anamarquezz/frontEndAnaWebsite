@@ -42,9 +42,9 @@ body {
 }
 
 .imgana{       
-    width: 100%;
+    width: 98%;
     height: 75vh;
-    background: linear-gradient(rgb(1 1 1 / 62%),rgb(0 0 0 / 92%)), url(/img/anaa.052a3116.jpg) center no-repeat;
+    background: linear-gradient(rgb(1 1 1 / 62%),rgb(0 0 0 / 92%)), url(../img/anaa.jpg) center no-repeat;
     background-size: cover;
     border-radius: 15rem  0 0 0;
     margin:1rem
@@ -75,20 +75,20 @@ body {
 .div-der{  
     display: flex;
     flex-direction: column;  
-    width: 45vw;
-    margin-top: 3rem;
-    margin-left: 2rem;
+    width: 50%;
+    margin-top: 3rem;    
     height: 45vw;
     background: var(--clr-bg-darkdark);
     align-content: center;
+    justify-content: center;    
     flex-wrap: wrap;
 }
 
 .black-block{
     background-color: var(--clr-bg-gray) ;
-    margin: 5rem;
+   
     width: 80vh;
-    height: 80vh;
+    height: 50vh;
     border-radius: 10rem 0 10rem 0;  
     
 }
@@ -105,6 +105,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
+    padding-top: 2rem;
 
 }
 .img-izq{
@@ -113,4 +114,32 @@ body {
 .img-illus{
     width: 15vh;
     border-radius: 2rem;
+}
+.imf-der{
+    display: flex;
+    flex-direction: column;    
+    align-content: center;
+    justify-content: center;    
+    flex-wrap: wrap;
+}
+.viewMore{
+    text-decoration: none;
+    font-size: 2rem;   
+    color: var(--clr-text); 
+    margin-top: -.01rem;
+}
+
+.iconviewmore{
+    font-size: 3rem;
+    color: var(--clr-text);
+   
+}
+.viewMore:hover, .iconviewmore:hover {
+    color:var(--clr-bg-gray);
+   
+}
+
+a, a:active, :visited{
+    text-decoration: none;
+    color: transparent;
 }

@@ -23,7 +23,7 @@
           </div>
           <div class="imf-der">
               <link rel="stylesheet" href="">
-              <p>View More</p>
+              <router-link to="/Dashboard"><i  class="iconviewmore fas fa-arrow-circle-right social-link"></i><p class="viewMore">View More</p></router-link>
           </div>
         </div>
       </div>
