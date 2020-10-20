@@ -1,0 +1,37 @@
+@import url('global-i.css');
+
+#main-background {
+  display: grid;
+  grid-template-areas: 
+        "🎃 👻"
+
+        "🎃 👻"
+
+        "💀 💀" ;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: auto 1fr;
+  height: 100vh;    
+}
+
+
+#main-background{  
+  background-color: var(--clr-bg-gray); 
+}
+
+.c-izq{
+  grid-area: 🎃;
+  background-color:  var(--clr-bg-gray); 
+  
+}
+
+.c-der{
+  grid-area: 👻;
+  background-color:  var(--clr-bg-darkdark); ;
+
+}
+
+.c-foo{
+  grid-area: 💀;
+  background-color:var(--clr-bg-dark);
+  height: 20vh;          
+}

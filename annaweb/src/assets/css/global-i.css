@@ -1,0 +1,24 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+:root {
+    --clr-icons: #929292;
+    --clr-text: #fff;
+    --clr-bg-dark: #202020;
+    --clr-bg-darkdark:#000000;
+    --clr-bg-gray:rgba(157,157,157,12%);
+    --clr-bg-light: #ffffff;
+    --clr-accent: #c254a6;
+}
+
+body {
+    margin: 0;
+    padding: 0;    
+}
+
+
