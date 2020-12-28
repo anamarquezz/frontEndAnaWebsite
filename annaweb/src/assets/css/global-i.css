@@ -1,4 +1,6 @@
 
+
+
 *,
 *::before,
 *::after {
@@ -12,6 +14,7 @@
     --clr-bg-dark: #202020;
     --clr-bg-darkdark:#000000;
     --clr-bg-gray:rgba(157,157,157,12%);
+    --clr-bg-gblue:rgb(25 50 118 / 68%);
     --clr-bg-light: #ffffff;
     --clr-accent: #c254a6;
 }
