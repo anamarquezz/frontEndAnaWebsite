@@ -1,0 +1,51 @@
+
+  .cardroundtop{
+    display: grid;
+    background-color: #fff;
+    grid-template-areas:
+        "🎃 🎃"
+        "👻 👻"
+        "🌎 🌎"
+        "☀️ 💀";
+      grid-template-columns:1fr 1fr;       
+      height: 30vh;     
+      border-radius: 2rem  1rem 0 0;  
+      background-color: rgb(252, 253, 253); 
+      text-align: center;    
+      font-family: Poppins-Medium;  
+      row-gap: .1rem;
+      column-gap: 4rem;
+      margin: .5rem;     
+  }  
+
+  
+.title{
+  
+  grid-area: 🎃;
+
+}
+
+.preview{
+  grid-area: 👻;
+}
+
+.Subtitule{
+ 
+  grid-area: 🌎;
+}
+.hashtags{ 
+  grid-area: ☀️;
+  font-size: .9rem;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.likes{
+grid-area: 💀;
+font-size: 1.2rem; 
+display: flex;
+margin-right:1rem;
+justify-content: flex-end;
+align-items: center; 
+align-content: center;
+}

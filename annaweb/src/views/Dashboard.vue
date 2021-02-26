@@ -1,33 +1,43 @@
 <template>
-    <div class="dashboard">
-        <div class="web">
-            <div class="menu-izq"></div>
-            <div class="nav-bar">
-                <div>Projects</div>
-                <div>
-                    <ul
-                     class="search-icons">
-                         <li><a href="https://github.com/anamarquezz" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                        <li><a href="https://github.com/anamarquezz" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/ana-marquez/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    <div id="Dashboard" class="back">
+            <div class="d-menu-izq">
+                <div class="Image-name">
+                    <div class="img-div">
+                        <img width="130" src="@/assets/img/img3.webp" alt="">
+                    </div>
+                    <p class="name">Ana Márquez</p>
+                    <p class="position">Full Stack Developer</p>
+                </div>
+                <div class="d-nav-bar">
+                    <ul class="list-menu">
+                        <li class="active"><a href="#" >INIT</a></li>
+                        <li ><a href="#">Projects</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="projects-cards"></div>
-        </div>
-        <div class="mobil">
-            <div class="menu--mobil-down">
+            <div class="d-title-projects-cards">
+                <div class="titlee">
+                    <p>Projects</p>
+                </div>
+                <div class="icons-nav"></div>
             </div>
-            <div class="main-mobil">
+            <div class="d-projects-cards">
+                <cardRoundtop v-for="n in 50" v-bind:key="n"></cardRoundtop>
             </div>
-        </div>
     </div>
 </template>
 <script>
 // @ is an alias to /src
+import cardRoundtop from '@/components/cardRoundtop.vue'
+
 export default {
   name: 'Dashboard',
-  components: {}
+  components: {
+    cardRoundtop
+  }
 }
 </script>
 <style>

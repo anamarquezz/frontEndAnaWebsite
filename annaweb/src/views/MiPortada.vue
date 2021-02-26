@@ -1,33 +1,47 @@
 <template>
-    <div class="principal">
-        <div id="main-background">
-            <div class="c-izq">
-                <img src="@/assets/img/img3.webp" alt="https://society6.com/annamachtart" title="https://society6.com/annamachtart" class="anchor-tooltip">
-                <ul class="social-icons">
-                    <li><a href="https://github.com/anamarquezz" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/ana-marquez/" target="_blank" ><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+        <div class="back">
+            <div class="main-background">
+            <div class="child div-imagen">
             </div>
-            <div class="c-der">
+            <div class="child div-nombre">
                 <div class="mi-nombre">
                     <p class="nombre">Ana Márquez</p>
                     <p class="position">Full Stack Developer</p>
                 </div>
-                <div class="go-site">
-                    <ul>
-                        <router-link to="/dashboard"><i class="fas fa-arrow-circle-right"></i></router-link>
-                        <router-link to="/dashboard" ><p class="text-link">More Info</p></router-link>
-                    </ul>
-                </div>
+            </div>
+            <div class="child div-viewmore">
+                <ul class="links-icons">
+                    <router-link to="/dashboard"><i class="fas fa-arrow-circle-right"></i></router-link>
+                    <router-link class="text-link" to="/dashboard" ><p >View More</p></router-link>
+                </ul>
+            </div>
+            <div class="child">
+                <ul class="position-m">
+                    <h3 class="">Full Stack Developer</h3>
+                </ul>
+                <ul class="div-contact">
+                    <li><a href="https://github.com/anamarquezz" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ana-marquez/" target="_blank" ><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                 <ul class="nombre-m">
+                    <h3 class="">Ana Márquez</h3>
+                </ul>
+            </div>
             </div>
         </div>
-    </div>
 </template>
 <script>
 // @ is an alias to /src
 export default {
   name: 'Home',
-  components: {}
+  components: {},
+  data () {
+    return {
+      isMobile: false
+    }
+  },
+  methods: {
+  }
 }
 </script>
 <style>

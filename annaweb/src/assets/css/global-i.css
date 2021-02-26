@@ -1,10 +1,57 @@
+@font-face {
+  font-family: "Charm-Bold"; 
+  src: url('../fonts/Charm-Bold.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "AbrilFatface"; 
+  src: url('../fonts/AbrilFatface-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "ViaodaLibre-Regular"; 
+  src: url('../fonts/ViaodaLibre-Regular.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Rakkas-Regular"; 
+  src: url('../fonts/Rakkas-Regular.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Newsreader-Bold"; 
+  src: url('../fonts/Newsreader-Bold.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Newsreader-Light"; 
+  src: url('../fonts/Newsreader-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins-Black"; 
+  src: url('../fonts/Poppins-Black.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins-Medium"; 
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 300;
+}
+
 
 
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
 
@@ -15,13 +62,16 @@
     --clr-bg-darkdark:#000000;
     --clr-bg-gray:rgba(157,157,157,12%);
     --clr-bg-gblue:rgb(25 50 118 / 68%);
+    --clr-bg-blue-light:rgb(128 196 225 / 71%);
     --clr-bg-light: #ffffff;
     --clr-accent: #c254a6;
 }
 
 body {
     margin: 0;
-    padding: 0;    
+    padding: 0;   
+   /* cursor:url('../img/mani-01-l.png'), auto;
+      cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="28" font-size="32">🎃</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto;*/
 }
 
 

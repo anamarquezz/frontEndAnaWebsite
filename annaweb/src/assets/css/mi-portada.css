@@ -1,140 +1,252 @@
 @import url('global-i.css');
 
-
-#main-background {
-  display: grid;
-  grid-template-areas:
-    "🎃 👻"
-    "🎃 👻";
-  grid-template-columns:.5fr 1fr;  
-  grid-template-rows: auto 1fr;
-  align-items: center;
-  
-}
-
-
-#main-background {
-  background-color: var(--clr-bg-dark);
+.back{
+  background-color: #202020;  
   height: 100vh;
+  font-family: AbrilFatface;
 }
 
-.c-izq {
+.div-imagen{
+  background-color: lightpink;
   grid-area: 🎃;
-  background-color: var(--clr-bg-light);  
-  height: 85vh;  
-  border-radius: 6rem 0 0 0;
-  margin-left:2rem;
-  display: grid; 
-  align-items: end;
-  box-shadow: 16px 17px 11px black;
-}
-.c-izq img{
-  width: 100%;
-  border-radius: 6rem 0 0 0;
+  background:url(../img/img3.webp) no-repeat  3.5vw 1vw;
+  background-size: cover;
+  height: 100%;
+  width: 100%; 
 }
 
-
-.social-icons {
-  width: 110px;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  position: fixed;
-  top: 85%;
-  left:-.1%
-}
-.social-icons i{
-  font-size: 2.2rem;    
-  color:var(--clr-bg-dark); 
-}
-.text-link{
-  font-style: italic;
-  text-decoration: none;
-  font-size:2.5rem ;
-  
-}
-
-.fa-arrow-circle-right:hover, .fa-linkedin:hover, .fa-github-square:hover{
-  transform:scale(1.1);
-  color:var(--clr-bg-gblue);
-  cursor:pointer;
-}
-
-.c-der {
+.div-nombre{
+  background-color:#000000;
   grid-area: 👻;
-  background-color: var(--clr-bg-darkdark); 
-  height: 85vh;
-  border-radius: 0 0 6rem 0;
-  margin-right:2rem;
-  display: grid;
-  align-content:space-around;  
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  box-shadow: 16px 17px 11px black;
-}
-.c-der .mi-nombre .nombre{
-  font-size: 2.7rem;
-  
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center; 
 }
 
+.div-nombre .mi-nombre{
+  background-color: rgba(0, 128, 170, 0.21);
+  width: 32vw;
+  height: 12rem;
+  border-radius: 5rem 0 6rem 0;
+}
 
-.c-der .mi-nombre .position{
+.div-nombre .mi-nombre .nombre{
+  font-size: 2.5rem;
+}
+.div-nombre .mi-nombre .position{  
   font-size: 1.5rem;
 }
-.mi-nombre, .go-site{
-  width:50vw;
-  height: 20vh;
-  justify-self: center;  
+
+.div-viewmore{
+  background-color:#000000;
+  grid-area: 💀;
+  border-radius: 0 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
 }
 
-.mi-nombre{
-  background-color:var(--clr-bg-gblue) ;
-  border-radius: 6rem 0 6rem 0;
-  color:var(--clr-text); 
+.div-viewmore .fa-arrow-circle-right{
+  color:#fff;
+  list-style: none;
+  font-size: 3vw;
 }
 
-.go-site{
-  color:var(--clr-text); 
-}
-.go-site ul{  
-  font-size: 3rem;   
-  list-style: none; 
+.div-viewmore .text-link{
+  font-size: 2vw;
+  color:#fff;
 }
 
-@media(max-width:650px){
-  .social-icons i{
-    font-size: 2.2rem;    
-    color:var(--clr-text); 
-  }
-  .c-izq img{
-    width: 100%;
-    height: 50vh;
-    margin-left: -1.5rem;
-    border-radius: 0 0 0 0;
-  }
+
+.div-contact{ 
+  list-style: none;
+  display:flex;
+  justify-content: space-around;    
+  position: absolute;  
+  top: 68vh;
+  left:-1rem;  
+  font-size: 2rem;    
+}
+.fab{
+  margin: .2rem;
+}
+
+i {
+  font-size: 3rem;
+  color: var(--clr-bg-dark);
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .main-background{
+    display: grid;
+    background-color: white;
+    grid-template-areas:
+        "🎃 👻"
+        "🎃 💀";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr .5fr;;
+      height: 90vh;
+      position: absolute;
+      top:2rem;
+      left:5rem;
+      right:5rem;
+      border-radius: 5rem 0 6rem 0;
+  }  
 
   
-#main-background {
-  display: grid;
-  grid-template-areas:
-    "🎃 "
-    "👻";    
-    grid-template-columns: 1fr;
-}
-
-.c-izq {
+.div-imagen{
+  background-color: lightpink;
   grid-area: 🎃;
-  height: 50vh;
+  background:url(../img/img3.webp) no-repeat ;
+  background-size: cover;
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  left: 1rem;
+  border-radius: 5rem 0 0 0;
+}
 }
 
 
-.c-der {
-  grid-area: 👻;
-  height: 50vh;
+@media screen and (max-width: 767px) {
+
+  .back{    
+    height: 0;
+  }
+
+  .main-background{
+    display: grid;
+    grid-template-areas:
+     "🎃" 
+     "💀";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr;
+    height: 100vh;
+    position: absolute;     
+    width: 100vw;
+  }
+  
+  
+.div-imagen{
+  grid-area: 🎃;
+  background:url(../img/img3.webp) no-repeat ;
+  background-size: cover;
+  height: 100%;
+  width: 118%;
+  position: absolute;
+  left: -8rem;
 }
 
-.mi-nombre{
+
+.div-viewmore{
+  background-color:#000000;
+  grid-area: 💀;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-end;
+}
+
+.div-viewmore .text-link{
+  font-size: 5vw;
+  color:#fff;  
+}
+
+.div-viewmore .fa-arrow-circle-right{
+  color:#fff;
+  list-style: none;
+  font-size: 10vw;
+}
+
+.links-icons{
+  margin:2rem;
+}
+.div-nombre{
   display: none;
 }
 
+.div-contact{ 
+  list-style: none;
+  display:flex;
+  justify-content: space-around;    
+  position: absolute;  
+  top: 20vh;
+  left:15rem;  
+  font-size: 2rem;    
+}
+.fab{
+  margin: .2rem;
+}
+
+i {
+  font-size: 2.4rem;
+  color: var(--clr-bg-dark);
+}
+
+.position-m{  
+  font-family: 'ViaodaLibre-Regular';
+  font-size: .87rem;     
+  display:flex;
+  position: absolute;  
+  top: 18vh;
+  left:11.5rem;  
+}
+
+
+.nombre-m{  
+  font-family: 'ViaodaLibre-Regular';
+  font-size: 2rem;  
+  color:white;
+  display:flex;
+  position: absolute;  
+  top: 50vh;
+  left:0;  
+}
+}
+
+@media screen and (max-width: 766px) and (min-width: 588px) {
+  .div-imagen{
+    background-color: lightpink;
+    grid-area: 🎃;
+    background:url(../img/img3.webp) no-repeat  3.5vw 1vw;
+    background-size: cover;
+    height: 100%;
+    width: 80%; 
+  }
+  .div-contact{ 
+    list-style: none;
+    display:flex;
+    justify-content: space-around;    
+    position: absolute;  
+    top: 20vh;
+    left:25rem;  
+    font-size: 2rem;    
+  }
+  .position-m{  
+    font-family: 'ViaodaLibre-Regular';
+    font-size: 1rem;     
+    display:flex;
+    position: absolute;  
+    top: 17vh;
+    left:20rem;  
+  }
+
+  .div-viewmore .text-link{
+    font-size: 5vw;
+    
+  }
+  
+  .div-viewmore .fa-arrow-circle-right{
+    color:#fff;    
+    font-size: 8vw;
+  }
+
+ 
 
 }
