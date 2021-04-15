@@ -84,19 +84,26 @@ align-items: center;
     color:white  !important;
 }
 .d-title-projects-cards{
-    grid-area: 👻;  
-    background: #9537b1;
-  
- 
+    grid-area: 👻;    
+    height: 10vh; 
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 2rem;;
+    color:var(--clr-text);
 }
 .d-projects-cards{
-    grid-area:🔮 ;
-    max-width: 82vw;
-    display: flex;
-    flex-wrap: wrap;    
-    justify-content: space-around;
-    overflow: auto;    
-    height: 85vh;
+    grid-area: 🔮;
+    display: grid;
+    /* justify-content: unset; */
+    grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) );
+    grid-template-rows: repeat(auto-fill, 250px);
+    overflow: auto;
+    align-content: stretch;
+    /* column-gap: 20px; */
+    /* row-gap: 15px; */
+    /* justify-items: unset; */
+    margin: 0 49px 0 36px;  
 }
 
 }

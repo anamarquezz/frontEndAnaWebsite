@@ -1,7 +1,7 @@
 <template>
         <div class="cardroundtop">
             <div class="title">Landing Page</div>
-            <div class="preview"><img width="180" src="@/assets/img/layoutwebsite.jpg" alt=""></div>
+            <div class="preview"></div>
             <div class="Subtitule">Life On Marth</div>
             <div class="hashtags">#VUE#HTML</div>
             <div class="likes">❤️</div>
