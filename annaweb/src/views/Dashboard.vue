@@ -22,9 +22,14 @@
       <div class="titlee">
         <p>Projects</p>
       </div>
-      <div>        
-      
-      </div>
+      <div class="icons-title">
+        <ul>                 
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <li><a href="#"><i class="fas fa-chevron-circle-left"></i></a></li>
+            <li><a href="#"><i class="fas fa-sync-alt"></i></a></li>
+            <li><a href="#"><i class="fas fa-chevron-circle-right"></i></a></li>
+        </ul>           
+      </div>    
     </div>
     <div class="d-projects-cards">
       <cardRoundtop v-for="n in 12" v-bind:key="n"></cardRoundtop>

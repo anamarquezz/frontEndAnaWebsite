@@ -14,7 +14,7 @@
     "🎃 👻"
     "🎃 🔮 ";
     grid-template-columns: 300px 1fr;
-    grid-template-rows: .2fr 1fr;
+    grid-template-rows: 100px 1fr;
     row-gap: 1rem;
     column-gap: 1rem;
    
@@ -88,10 +88,35 @@ align-items: center;
     height: 10vh; 
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding-left: 100px;
     font-size: 2rem;;
     color:var(--clr-text);
+    align-items: end;
 }
+
+.d-title-projects-cards  .icons-title{
+    padding-right: 150px;
+}
+.d-title-projects-cards  .icons-title ul{
+    list-style: none;
+    display: flex;    
+    justify-content: space-around;
+}
+.d-title-projects-cards  .icons-title .fas{
+    color:white !important;
+    font-size: 25px;
+    margin-right: 10px;
+    transition: all 0.15s;
+  }
+  
+
+  
+
+  .d-title-projects-cards  .icons-title .fas:hover {
+	transform: scale(1.5);
+}
+
+
 .d-projects-cards{
     grid-area: 🔮;
     display: grid;
@@ -103,7 +128,7 @@ align-items: center;
     /* column-gap: 20px; */
     /* row-gap: 15px; */
     /* justify-items: unset; */
-    margin: 0 49px 0 36px;  
+    margin: 0 134px 0 82px;  
 }
 
 }
