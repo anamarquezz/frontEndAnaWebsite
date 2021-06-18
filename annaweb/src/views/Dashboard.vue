@@ -17,6 +17,13 @@
           <li><a href="#">About</a></li>
         </ul>
       </div>
+      
+      <div class="mylinks">
+        <ul class="mylinksul">                           
+            <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>           
+      </div>    
     </div>
     <div class="d-title-projects-cards">
       <div class="titlee">
